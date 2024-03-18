@@ -1,0 +1,16 @@
+D:\Desktop\C#Study\Genericity\Genericity\bin\Debug\net5.0\Genericity.exe
+D:\Desktop\C#Study\Genericity\Genericity\bin\Debug\net5.0\Genericity.deps.json
+D:\Desktop\C#Study\Genericity\Genericity\bin\Debug\net5.0\Genericity.runtimeconfig.json
+D:\Desktop\C#Study\Genericity\Genericity\bin\Debug\net5.0\Genericity.runtimeconfig.dev.json
+D:\Desktop\C#Study\Genericity\Genericity\bin\Debug\net5.0\Genericity.dll
+D:\Desktop\C#Study\Genericity\Genericity\bin\Debug\net5.0\ref\Genericity.dll
+D:\Desktop\C#Study\Genericity\Genericity\bin\Debug\net5.0\Genericity.pdb
+D:\Desktop\C#Study\Genericity\Genericity\obj\Debug\net5.0\Genericity.csproj.AssemblyReference.cache
+D:\Desktop\C#Study\Genericity\Genericity\obj\Debug\net5.0\Genericity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\C#Study\Genericity\Genericity\obj\Debug\net5.0\Genericity.AssemblyInfoInputs.cache
+D:\Desktop\C#Study\Genericity\Genericity\obj\Debug\net5.0\Genericity.AssemblyInfo.cs
+D:\Desktop\C#Study\Genericity\Genericity\obj\Debug\net5.0\Genericity.csproj.CoreCompileInputs.cache
+D:\Desktop\C#Study\Genericity\Genericity\obj\Debug\net5.0\Genericity.dll
+D:\Desktop\C#Study\Genericity\Genericity\obj\Debug\net5.0\ref\Genericity.dll
+D:\Desktop\C#Study\Genericity\Genericity\obj\Debug\net5.0\Genericity.pdb
+D:\Desktop\C#Study\Genericity\Genericity\obj\Debug\net5.0\Genericity.genruntimeconfig.cache
