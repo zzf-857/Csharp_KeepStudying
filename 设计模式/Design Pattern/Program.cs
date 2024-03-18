@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms
+namespace Design_Pattern
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("123");
+
         }
     }
 }

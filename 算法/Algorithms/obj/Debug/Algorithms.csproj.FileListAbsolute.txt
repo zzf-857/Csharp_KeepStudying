@@ -1,0 +1,8 @@
+D:\Desktop\C#KeepStudying\算法\Algorithms\bin\Debug\Algorithms.exe.config
+D:\Desktop\C#KeepStudying\算法\Algorithms\bin\Debug\Algorithms.exe
+D:\Desktop\C#KeepStudying\算法\Algorithms\bin\Debug\Algorithms.pdb
+D:\Desktop\C#KeepStudying\算法\Algorithms\obj\Debug\Algorithms.csproj.AssemblyReference.cache
+D:\Desktop\C#KeepStudying\算法\Algorithms\obj\Debug\Algorithms.csproj.SuggestedBindingRedirects.cache
+D:\Desktop\C#KeepStudying\算法\Algorithms\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+D:\Desktop\C#KeepStudying\算法\Algorithms\obj\Debug\Algorithms.exe
+D:\Desktop\C#KeepStudying\算法\Algorithms\obj\Debug\Algorithms.pdb
