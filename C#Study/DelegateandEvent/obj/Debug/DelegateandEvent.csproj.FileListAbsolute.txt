@@ -1,0 +1,8 @@
+D:\Desktop\C#KeepStudying\C#Study\DelegateandEvent\bin\Debug\DelegateandEvent.exe.config
+D:\Desktop\C#KeepStudying\C#Study\DelegateandEvent\bin\Debug\DelegateandEvent.exe
+D:\Desktop\C#KeepStudying\C#Study\DelegateandEvent\bin\Debug\DelegateandEvent.pdb
+D:\Desktop\C#KeepStudying\C#Study\DelegateandEvent\obj\Debug\DelegateandEvent.csproj.AssemblyReference.cache
+D:\Desktop\C#KeepStudying\C#Study\DelegateandEvent\obj\Debug\DelegateandEvent.csproj.SuggestedBindingRedirects.cache
+D:\Desktop\C#KeepStudying\C#Study\DelegateandEvent\obj\Debug\DelegateandEvent.csproj.CoreCompileInputs.cache
+D:\Desktop\C#KeepStudying\C#Study\DelegateandEvent\obj\Debug\DelegateandEvent.exe
+D:\Desktop\C#KeepStudying\C#Study\DelegateandEvent\obj\Debug\DelegateandEvent.pdb
