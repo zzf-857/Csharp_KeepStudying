@@ -1,0 +1,8 @@
+D:\Desktop\C#KeepStudying\C#Study\InterfaceExample\bin\Debug\InterfaceExample.exe.config
+D:\Desktop\C#KeepStudying\C#Study\InterfaceExample\bin\Debug\InterfaceExample.exe
+D:\Desktop\C#KeepStudying\C#Study\InterfaceExample\bin\Debug\InterfaceExample.pdb
+D:\Desktop\C#KeepStudying\C#Study\InterfaceExample\obj\Debug\InterfaceExample.csproj.AssemblyReference.cache
+D:\Desktop\C#KeepStudying\C#Study\InterfaceExample\obj\Debug\InterfaceExample.csproj.SuggestedBindingRedirects.cache
+D:\Desktop\C#KeepStudying\C#Study\InterfaceExample\obj\Debug\InterfaceExample.csproj.CoreCompileInputs.cache
+D:\Desktop\C#KeepStudying\C#Study\InterfaceExample\obj\Debug\InterfaceExample.exe
+D:\Desktop\C#KeepStudying\C#Study\InterfaceExample\obj\Debug\InterfaceExample.pdb

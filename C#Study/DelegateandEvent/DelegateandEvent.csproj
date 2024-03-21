@@ -48,6 +48,7 @@
     <Compile Include="DIYEvent.cs" />
     <Compile Include="MyEvent.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProgrammingEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MyThread.cs" />
   </ItemGroup>

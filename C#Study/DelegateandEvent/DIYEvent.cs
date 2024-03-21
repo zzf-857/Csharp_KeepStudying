@@ -20,14 +20,38 @@ namespace DelegateandEvent
     //事件拥有者
     public class Customer
     {
-        //事件处理器实例化
+        //手动声明的委托字段
         private OrderEventHandler orderEventHandler;
 
         //自定义事件
         public event OrderEventHandler MyOrder
         {
-            add { this.orderEventHandler += value; }
-            remove { this.orderEventHandler -= value; }
+            //需要添加add和remove访问器类似于属性的get和set
+            add 
+            {
+                if (1>0)
+                {
+                    Console.WriteLine("满足条件，能够订阅事件");
+                    this.orderEventHandler += value;
+                }
+                else
+                {
+                    Console.WriteLine("不满足条件，无法订阅事件");
+                }
+                
+            }
+            remove 
+            { 
+                if(1>0)
+                {
+                    Console.WriteLine("满足条件");
+                    this.orderEventHandler -= value;
+                }
+                else
+                {
+                    Console.WriteLine("不满足条件，无法退订事件");
+                }
+            }
         }
 
         public double Bill { get; set; }
@@ -45,7 +69,6 @@ namespace DelegateandEvent
         public void SitDown()
         {
             Console.WriteLine("Sit down");
-
         }
 
         public void Think()
@@ -64,9 +87,11 @@ namespace DelegateandEvent
 
             e.DishName = "辣椒炒肉";
             e.Size = "large";
+            //利用事件处理器进行信息传输，当有人订阅就执行响应操作
             orderEventHandler?.Invoke(this, e);
         }
 
+        //Customer实例可以调用的方法
         public void Action()
         {
             Console.ReadKey();
@@ -103,6 +128,4 @@ namespace DelegateandEvent
             customer.Bill += price;
         }
     }
-
-
 }

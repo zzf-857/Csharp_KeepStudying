@@ -1,0 +1,8 @@
+D:\Desktop\C#KeepStudying\C#Study\ClassStudy\bin\Debug\ClassStudy.exe.config
+D:\Desktop\C#KeepStudying\C#Study\ClassStudy\bin\Debug\ClassStudy.exe
+D:\Desktop\C#KeepStudying\C#Study\ClassStudy\bin\Debug\ClassStudy.pdb
+D:\Desktop\C#KeepStudying\C#Study\ClassStudy\obj\Debug\ClassStudy.csproj.AssemblyReference.cache
+D:\Desktop\C#KeepStudying\C#Study\ClassStudy\obj\Debug\ClassStudy.csproj.SuggestedBindingRedirects.cache
+D:\Desktop\C#KeepStudying\C#Study\ClassStudy\obj\Debug\ClassStudy.csproj.CoreCompileInputs.cache
+D:\Desktop\C#KeepStudying\C#Study\ClassStudy\obj\Debug\ClassStudy.exe
+D:\Desktop\C#KeepStudying\C#Study\ClassStudy\obj\Debug\ClassStudy.pdb

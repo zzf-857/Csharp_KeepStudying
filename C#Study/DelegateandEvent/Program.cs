@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -9,13 +10,27 @@ using System.Windows.Forms;
 
 namespace DelegateandEvent
 {
+
+    delegate void Help();
+
     internal class Program
     {
         static void Main(string[] args)
         {
             #region Delegate
-            //Delegate();
+            Delegate();
             #endregion
+
+            #region lambda表达式
+            var d_s = "告诉你匿名函数lambda表达式";//直接根据需要修改代码
+            GoStation(() => Console.WriteLine(d_s));//使用匿名函数和lambda表达式使得代码更加简洁
+            #endregion
+
+            #region 泛型委托lambda表达式混合使用
+            DelegateMixed<int>((int a, int b) => { return a * b; },100,200);
+            #endregion
+
+
 
             #region Thread
             //ThreadMethod();
@@ -32,20 +47,28 @@ namespace DelegateandEvent
             #endregion
 
             #region 自定义事件
-            MyEvent();
+            //MyEvent();
             #endregion
 
+            #region 在使用事件时可能出现的错误
+            // ErrorEvent();
+            #endregion
 
 
 
         }
 
+        /// <summary>
+        /// 简单委托使用
+        /// </summary>
         static void Delegate()
         {
 
             //基础使用
             //BasicUse basicUse = new BasicUse();
             //basicUse.Run();
+
+
 
             //模板方法
             //ProductFactory productFactory = new ProductFactory();
@@ -60,20 +83,50 @@ namespace DelegateandEvent
             //Console.WriteLine(box1.Product.Name + "," + box1.Product.Description);
             //Console.WriteLine(box2.Product.Name + "," + box1.Product.Description);
 
-            Cook cook = new Cook();
-            WrapFood wrapFood = new WrapFood();
 
-            Func<FoodClass> GBJD = new Func<FoodClass>(cook.GBJD);
-            Func<FoodClass> LJCR = new Func<FoodClass>(cook.LJCR);
+            /*            Cook cook = new Cook();
+                        WrapFood wrapFood = new WrapFood();
 
-            FoodBox foodBox1 = wrapFood.foodBox(GBJD);
-            FoodBox foodBox2 = wrapFood.foodBox(LJCR);
+                        Func<FoodClass> GBJD = new Func<FoodClass>(cook.GBJD);
+                        Func<FoodClass> LJCR = new Func<FoodClass>(cook.LJCR);
 
-            Console.WriteLine(foodBox1.MadeFood.Name);
-            Console.WriteLine(foodBox2.MadeFood.Name);
+                        FoodBox foodBox1 = wrapFood.foodBox(GBJD);
+                        FoodBox foodBox2 = wrapFood.foodBox(LJCR);
+
+                        Console.WriteLine(foodBox1.MadeFood.Name);
+                        Console.WriteLine(foodBox2.MadeFood.Name);*/
+
+
+            //多播委托
+            //MulticastDelegation multicastdelegation = new MulticastDelegation();
+            //multicastdelegation.ManyDelegate();
+
+        }
+
+        /// <summary>
+        /// lambda表达式和委托的结合使用
+        /// </summary>
+        /// <param name="do_sth">外部传入的一个匿名函数</param>
+        static void GoStation(Help do_sth)//相当于输出变量
+        {
+            Console.WriteLine("来到车站");
+            Console.WriteLine("看见朋友");
+            do_sth();//适用于那些模糊的情况，知道需要一个行为 但是不能确定具体的行为
+            Console.WriteLine("离开");
+        }
+
+        /// <summary>
+        /// 泛型委托lambda表达式混合
+        /// </summary>
+        static void DelegateMixed<T>(Func<T, T, T> func, T x, T y)
+        {
+            Console.WriteLine(func(x, y));
         }
 
 
+        /// <summary>
+        /// 委托，线程使用
+        /// </summary>
         static void ThreadMethod()
         {
             //创建对应实例
@@ -118,6 +171,9 @@ namespace DelegateandEvent
             task3.Start();
         }
 
+        /// <summary>
+        /// 简易事件理解
+        /// </summary>
         static void FormEvent()
         {
             Form form = new Form();
@@ -126,15 +182,39 @@ namespace DelegateandEvent
             form.ShowDialog();
         }
 
-
+        /// <summary>
+        /// 自定义事件
+        /// </summary>
         static void MyEvent()
         {
             Customer customer = new Customer();
             Watier waiter = new Watier();
+
             customer.MyOrder += waiter.Action;
 
             customer.Action();
             customer.PayTheBill();
+        }
+
+        static void ErrorEvent()
+        {
+            Programmer programmer = new Programmer();
+            Computer computer = new Computer();
+            programmer.programming += computer.Action;
+            //programmer.Login();
+
+
+            ProgrammingEventArgs e1 = new ProgrammingEventArgs();
+            e1.Password = "555";
+            e1.DataBaseManager = "Hacker";
+
+
+            Programmer Hacker = new Programmer();
+            Hacker.programming += computer.Action;
+            //处于委托字段情况下，可以直接调用订阅的方法，这样就相当于“绕过”了事件触发的条件
+            //直接触发事件后运行处理逻辑
+            //Hacker.programming.Invoke(programmer,e1);
+            Hacker.Login();
         }
     }
 }

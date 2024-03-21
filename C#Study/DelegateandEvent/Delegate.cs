@@ -15,7 +15,7 @@ namespace DelegateandEvent
     }
 
     #region 基础使用
-    public delegate int NewDelegate(int x, int y);
+    public delegate int LKDelegate(int x, int y);
 
     internal class BasicUse
     {
@@ -25,9 +25,6 @@ namespace DelegateandEvent
             Action action = new Action(calculator.Defualt);
             Func<int, int, int> function1 = new Func<int, int, int>(calculator.Add);
             Func<int, int, int> function2 = new Func<int, int, int>(calculator.Sub);
-
-            NewDelegate newDelegate = new NewDelegate(calculator.Sub);
-
 
             //直接调用
             calculator.Defualt();
@@ -44,7 +41,13 @@ namespace DelegateandEvent
             action();
             Console.WriteLine(function1(3, 5));
             Console.WriteLine(function2(3, 5));
+
+
+
+
         }
+
+
 
         public void Defualt()
         {
@@ -52,20 +55,56 @@ namespace DelegateandEvent
         }
         public int Add(int x, int y)
         {
+            Console.WriteLine($"加法调用：{x + y}");
             return x + y;
         }
         public int Sub(int x, int y)
         {
+            Console.WriteLine($"减法调用：{x - y}");
             return x - y;
+        }
+        public int Mul(int x, int y)
+        {
+            Console.WriteLine($"乘法调用：{x * y}");
+            return x * y;
+        }
+        public int Div(int x, int y)
+        {
+            Console.WriteLine($"除法调用：{x / y}");
+            return x / y;
+
         }
     }
     #endregion
 
+    #region 多播委托
+    class MulticastDelegation
+    {
+        public void ManyDelegate()
+        {
+            BasicUse calculator = new BasicUse();
+            //多播委托
+            LKDelegate newDelegate = new LKDelegate(calculator.Add);
+            newDelegate += calculator.Sub;         
+            newDelegate += calculator.Mul;
+            newDelegate += calculator.Div;
+            newDelegate(100, 3);
 
+            //直接调用
+            //calculator.Add(100, 3);
+            //calculator.Sub(100, 3);
+            //calculator.Mul(100, 3);
+            //calculator.Div(100, 3);
+        }
+    }
+    #endregion
 
+    #region 泛型委托
+
+    #endregion
 
     #region 模板方法
-  
+
     class Productclass
     {
         public string Name { get; set; }
@@ -136,7 +175,7 @@ namespace DelegateandEvent
     class WrapFood
     {
         public FoodBox foodBox(Func<FoodClass> getfood)
-        { 
+        {
             FoodBox box = new FoodBox();
             box.MadeFood = getfood.Invoke();
             return box;
@@ -147,19 +186,22 @@ namespace DelegateandEvent
     class Cook
     {
         public FoodClass GBJD()
-        { 
-            FoodClass foodClass= new FoodClass();
+        {
+            FoodClass foodClass = new FoodClass();
             foodClass.Name = "宫保鸡丁";
             return foodClass;
 
         }
 
         public FoodClass LJCR()
-        { 
-            FoodClass foodClass= new FoodClass();
+        {
+            FoodClass foodClass = new FoodClass();
             foodClass.Name = "辣椒炒肉";
             return foodClass;
         }
     }
     #endregion
+
+
+
 }
