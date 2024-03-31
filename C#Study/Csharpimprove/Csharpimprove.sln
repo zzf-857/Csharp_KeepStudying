@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csharpimprove", "Csharpimprove.csproj", "{AD1D082B-5247-4A16-B2C3-D20A53ACCF6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "..\..\数据结构\LinkedList\LinkedList.csproj", "{DDF022C5-E432-453C-B894-2BEC713E8592}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD1D082B-5247-4A16-B2C3-D20A53ACCF6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD1D082B-5247-4A16-B2C3-D20A53ACCF6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD1D082B-5247-4A16-B2C3-D20A53ACCF6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD1D082B-5247-4A16-B2C3-D20A53ACCF6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDF022C5-E432-453C-B894-2BEC713E8592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDF022C5-E432-453C-B894-2BEC713E8592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDF022C5-E432-453C-B894-2BEC713E8592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDF022C5-E432-453C-B894-2BEC713E8592}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF0A3319-7AA4-4159-BB7E-183DC4875819}
+	EndGlobalSection
+EndGlobal

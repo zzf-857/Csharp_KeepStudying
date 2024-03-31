@@ -123,7 +123,6 @@ namespace DelegateandEvent
             Console.WriteLine(func(x, y));
         }
 
-
         /// <summary>
         /// 委托，线程使用
         /// </summary>
