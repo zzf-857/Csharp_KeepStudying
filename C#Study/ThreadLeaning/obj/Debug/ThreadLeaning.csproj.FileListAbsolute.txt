@@ -1,0 +1,8 @@
+D:\Desktop\C#KeepStudying\C#Study\ThreadLeaning\bin\Debug\ThreadLeaning.exe.config
+D:\Desktop\C#KeepStudying\C#Study\ThreadLeaning\bin\Debug\ThreadLeaning.exe
+D:\Desktop\C#KeepStudying\C#Study\ThreadLeaning\bin\Debug\ThreadLeaning.pdb
+D:\Desktop\C#KeepStudying\C#Study\ThreadLeaning\obj\Debug\ThreadLeaning.csproj.AssemblyReference.cache
+D:\Desktop\C#KeepStudying\C#Study\ThreadLeaning\obj\Debug\ThreadLeaning.csproj.SuggestedBindingRedirects.cache
+D:\Desktop\C#KeepStudying\C#Study\ThreadLeaning\obj\Debug\ThreadLeaning.csproj.CoreCompileInputs.cache
+D:\Desktop\C#KeepStudying\C#Study\ThreadLeaning\obj\Debug\ThreadLeaning.exe
+D:\Desktop\C#KeepStudying\C#Study\ThreadLeaning\obj\Debug\ThreadLeaning.pdb
